@@ -1,0 +1,17 @@
+public class SumOfEven {
+    public static int findSum(int[] arr) {
+        int sum = 0;
+        for (int number : arr) {
+            if (number % 2 == 0) {
+                sum += number;
+            }
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        System.out.println(findSum(numbers));
+    }
+}
+
